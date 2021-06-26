@@ -6,10 +6,11 @@ import "./App.css";
 import HomePage from "./pages/homepage/homepage.component";
 
 const HatsPage = (props) => {
-  console.log(props);
+  console.log(props.history);
   return (
     <div>
       <h1>Hat Page</h1>
+      <button onClick={() => props.history.push("/topics")}>Topic Page</button>
     </div>
   );
 };
